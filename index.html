@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Para ti, mi amor ❤️</title>
+</head>
+<body>
+
+  <!-- ========== PANTALLA DE HUELLA / IMAGEN ========== -->
+  <div id="screen-fingerprint">
+    <h1 class="fp-title">Para ti, mi amor</h1>
+
+    <div class="fp-wrapper" id="fpArea">
+      <div class="outer-ring"></div>
+      <div class="progress-arc" id="progressArc"></div>
+
+      <!-- 
+        ★★★ AQUÍ PON TU IMAGEN ★★★
+        Cambia el src por la ruta de tu foto
+      -->
+      <img 
+        src="IMG/huellal.png" 
+        alt="Nosotros" 
+        class="fp-image"
+        id="fpImage"
+      >
+
+      <div class="scan-line" id="scanLine"></div>
+    </div>
+
+    <p class="fp-status" id="fpStatus">Casi listo...</p>
+    <p class="fp-hint">Toca la imagen para comenzar</p>
+  </div>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <div id="main-content">
+    <div class="date-header">30 de septiembre de 2024</div>
+
+    <h1 class="main-title">Felices 2 años mi amor</h1>
+
+    <!-- Sobre -->
+    <div class="envelope-section">
+      <div class="envelope" id="envelope">
+        <div class="envelope-body">
+          <div class="envelope-flap"></div>
+          <div class="envelope-heart">❤️</div>
+        </div>
+      </div>
+      <button class="btn-abrir" id="btnAbrir">Abrir</button>
+    </div>
+
+    <!-- Galería (cambia las imágenes por las tuyas) -->
+    <div class="gallery">
+      <img src="IMG/img1.jpeg" alt="Foto 1">
+      <img src="IMG/img2.jpeg" alt="Foto 2">
+      <img src="IMG/img3.jpeg" alt="Foto 3">
+      <img src="IMG/img4.jpeg" alt="Foto 4">
+      <img src="IMG/img5.jpeg" alt="Foto 5">
+      <img src="IMG/img6.jpeg" alt="Foto 6">
+    </div>
+
+    <!-- Línea de tiempo -->
+    <div class="timeline-section">
+      <h2 class="timeline-title">Nuestra Línea de Amor</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="date">30 sep 2024</div>
+          <div class="event">💕 Empezamos nuestro camino</div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">28 Oct 2024</div>
+          <div class="event">✨ Nuestra primer aventura</div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">30 sep 2025</div>
+          <div class="event">🌸 Primer aniversario</div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">21 Ago 2025</div>
+          <div class="event">Te convertiste en mi lic. linda</div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">30 sep 2026</div>
+          <div class="event">💫 Nuestro presente feliz</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video-section">
+      <p>Este video es dedicado para ti ❤️</p>
+      <div class="video-placeholder">
+        <!-- Cambia el src por el video de YouTube que quieras -->
+        <iframe 
+  src="https://www.youtube.com/embed/Q5iUsliiJbc" 
+  allowfullscreen
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+</iframe>
+      </div>
+    </div>
+
+    <!-- Escribir mensaje -->
+    <div class="message-section">
+      <div class="message-box">
+        <h3>❤️ Escríbeme algo bonito</h3>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje con amor..."></textarea>
+        <button class="btn-whatsapp" id="btnWhatsapp">
+          📱 Enviar por WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="footer">Hecho con tod mi amor para el amor de mi vida</div>
+  </div>
+
+  <!-- Modal de la carta -->
+  <div class="letter-modal" id="letterModal">
+    <div class="letter-content">
+      <div class="letter-text" id="letterText"></div>
+      <div class="letter-signature">❤️ Tu eterno enamorado</div>
+      <button class="btn-cerrar" id="btnCerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Corazones flotantes -->
+  <div class="floating-hearts" id="hearts"></div>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
